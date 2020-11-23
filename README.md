@@ -1,10 +1,16 @@
-# uts_kelompok_1
-Tugas Pengganti UTS Kelompok 1
+# uts_kelompok_5
 
-Andriana Hastanto - 0110218099
-Firman Permana
-Ahmad Badrul
-Syahrah Dihani
-TB Zakky Surya
-Habib
-Anwar Sanusi
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
