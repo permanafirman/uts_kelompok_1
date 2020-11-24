@@ -340,10 +340,10 @@ class _PageHomeState extends State<ProfileApp> {
               BottomNavigationBar(
                 type: BottomNavigationBarType.fixed,
                 backgroundColor: Colors.white,
-                selectedItemColor: Colors.black,
+                selectedItemColor: Colors.lightBlue,
                 unselectedItemColor: Colors.black.withOpacity(.60),
                 selectedFontSize: 14,
-                unselectedFontSize: 14,
+                unselectedFontSize: 13,
                 onTap: (value) {
                   // Respond to item press.
                 },
