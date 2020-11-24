@@ -1,5 +1,5 @@
-import 'dart:async';    
-import 'package:flutter/material.dart';    
+import 'dart:async';
+import 'package:flutter/material.dart';
 import 'login.dart';
 
 void main() {
@@ -23,34 +23,39 @@ class _MyAppState extends State<SplashApp> {
               context,
               MaterialPageRoute(builder: (context) => LoginApp()),
             ));
-    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       backgroundColor: Colors.white,
       body: Container(
-        margin: const EdgeInsets.only(left :40.0, right :40.0),
+          margin: const EdgeInsets.only(left: 40.0, right: 40.0),
           alignment: Alignment.center,
           child: SafeArea(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                CircleAvatar(
-                  radius: 100.0,
-                  backgroundImage: AssetImage('assets/images/logo_sttnf.jpg'),
-                ),
-                Column(
-                  children: <Widget>[
-                    Text("STT Terpadu Nurul Fikri",textAlign: TextAlign.center, style: TextStyle(fontSize: 20.0)),
-                    Text("Student App", textAlign: TextAlign.center, style: TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold)),
-                    Text("v 0.0.1", textAlign: TextAlign.center, style: TextStyle(fontSize: 20.0)),
-                  ],
-                ),
-              ],
-            ) 
-          )
-      ),
+              child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              CircleAvatar(
+                radius: 100.0,
+                backgroundImage: AssetImage('assets/images/logo_sttnf.jpg'),
+              ),
+              Column(
+                children: <Widget>[
+                  Text("STT Terpadu Nurul Fikri",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 20.0)),
+                  Text("Student App",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 28.0, fontWeight: FontWeight.bold)),
+                  Text("v 0.0.1",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 20.0)),
+                ],
+              ),
+            ],
+          ))),
     );
   }
 }

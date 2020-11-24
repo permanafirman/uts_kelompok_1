@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 main() {
-  runApp(MyApp());
+  runApp(KtmApp());
 }
 
-class MyApp extends StatelessWidget {
+class KtmApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,12 +24,13 @@ class MyApp extends StatelessWidget {
         ),
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Center(
                 child: Image.asset(
                   'assets/images/ktm.png',
                   height: 600,
-                  width: 400,
+                  width: 350,
                 ),
               ),
             ],

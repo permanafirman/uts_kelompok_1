@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'login.dart';
 import 'qr_sttnf.dart';
+import 'ktm_sttnf.dart';
 
 class ProfileApp extends StatefulWidget {
-
   final String nama;
   final String password;
 
   //constructor
 
-  ProfileApp({Key key, @required this.nama, @required this.password}) : super(key:  key);
+  ProfileApp({Key key, @required this.nama, @required this.password})
+      : super(key: key);
 
   @override
   _PageHomeState createState() => _PageHomeState();
@@ -20,303 +21,323 @@ class _PageHomeState extends State<ProfileApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        margin: const EdgeInsets.only(left :20.0, right :20.0),
+        margin: const EdgeInsets.only(left: 20.0, right: 20.0),
         alignment: Alignment.center,
         child: SafeArea(
-          child:Column(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               //Text('Welcome : ${widget.nama}'),
               //Text('Your Password is : ' + widget.password),
-                Row(
-                    children: <Widget>[
-                      CircleAvatar(
-                        radius: 30.0,
-                        backgroundImage: AssetImage('assets/images/avatar.png'),
-                      ),
-                      SizedBox(width:20),
-                      Flexible(
-                        child: Column(
+              Row(
+                children: <Widget>[
+                  CircleAvatar(
+                    radius: 30.0,
+                    backgroundImage: AssetImage('assets/images/avatar.png'),
+                  ),
+                  SizedBox(width: 20),
+                  Flexible(
+                    child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children:[
-                          Text("Cristiano Ronaldo",textAlign: TextAlign.center, style: TextStyle(fontSize: 20.0)),
-                          Text("0110200100",textAlign: TextAlign.center, style: TextStyle(fontSize: 20.0)),
-                        ]
-                        ),
-                      ),
-                    ],
+                        children: [
+                          Text("Cristiano Ronaldo",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 20.0)),
+                          Text("0110200100",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 20.0)),
+                        ]),
                   ),
-                Container(
-                  margin: const EdgeInsets.all(15.0),
-                  padding: const EdgeInsets.all(3.0),
-                  decoration: BoxDecoration(
-                    border: Border.all(color: Colors.blueAccent)
-                  ),
-                  child: Column(
-                    children: <Widget>[
-                      Row(
+                ],
+              ),
+              Container(
+                margin: const EdgeInsets.all(15.0),
+                padding: const EdgeInsets.all(3.0),
+                decoration:
+                    BoxDecoration(border: Border.all(color: Colors.blueAccent)),
+                child: Column(
                   children: <Widget>[
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children:[
-                        Text("Teknik Informatika",textAlign: TextAlign.end, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
+                    Row(
+                      children: <Widget>[
+                        Flexible(
+                          child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              children: [
+                                Text("Teknik Informatika",
+                                    textAlign: TextAlign.end,
+                                    style: TextStyle(fontSize: 18.0)),
+                              ]),
+                        ),
+                        Flexible(
+                          child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              children: [
+                                Text("2018",
+                                    textAlign: TextAlign.end,
+                                    style: TextStyle(fontSize: 18.0)),
+                              ]),
+                        ),
+                      ],
                     ),
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children:[
-                        Text("2018",textAlign: TextAlign.end, style: TextStyle(fontSize: 18.0)),
-                        ]
-                            ),
+                  ],
+                ),
+              ),
+              Row(
+                children: <Widget>[
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text("Email",
+                              textAlign: TextAlign.end,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(" ",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                ],
+              ),
+              Row(
+                children: <Widget>[
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text("No. Tlp",
+                              textAlign: TextAlign.end,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(" ",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                ],
+              ),
+              Row(
+                children: <Widget>[
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text("Tempat Lahir",
+                              textAlign: TextAlign.end,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(" ",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                ],
+              ),
+              Row(
+                children: <Widget>[
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text("Tanggal Lahir",
+                              textAlign: TextAlign.end,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(" ",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                ],
+              ),
+              Row(
+                children: <Widget>[
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text("Agama",
+                              textAlign: TextAlign.end,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(" ",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                ],
+              ),
+              Row(
+                children: <Widget>[
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text("Jenis Kelamin",
+                              textAlign: TextAlign.end,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(" ",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                ],
+              ),
+              Row(
+                children: <Widget>[
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text("Warga Negara",
+                              textAlign: TextAlign.end,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(" ",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                ],
+              ),
+              Row(
+                children: <Widget>[
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text("Golongan Darah",
+                              textAlign: TextAlign.end,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(" ",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                ],
+              ),
+              Row(
+                children: <Widget>[
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text("Status Pernikahan",
+                              textAlign: TextAlign.end,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(" ",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 18.0)),
+                        ]),
+                  ),
+                ],
+              ),
+              Row(
+                children: <Widget>[
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: <Widget>[
+                          MaterialButton(
+                            height: 50.0,
+                            color: Colors.blueAccent,
+                            textColor: Colors.white,
+                            padding:
+                                EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => KtmApp()));
+                            },
+                            child: Text('KTM'),
                           ),
-                        ],
-                      ),
-                    ],
+                        ]),
                   ),
-                ),
-                Row(
-                  children: <Widget>[
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children:[
-                        Text("Email",textAlign: TextAlign.end, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children:[
-                        Text(" ",textAlign: TextAlign.center, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: <Widget>[
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children:[
-                        Text("No. Tlp",textAlign: TextAlign.end, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children:[
-                        Text(" ",textAlign: TextAlign.center, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: <Widget>[
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children:[
-                        Text("Tempat Lahir",textAlign: TextAlign.end, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children:[
-                        Text(" ",textAlign: TextAlign.center, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: <Widget>[
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children:[
-                        Text("Tanggal Lahir",textAlign: TextAlign.end, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children:[
-                        Text(" ",textAlign: TextAlign.center, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: <Widget>[
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children:[
-                        Text("Agama",textAlign: TextAlign.end, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children:[
-                        Text(" ",textAlign: TextAlign.center, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: <Widget>[
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children:[
-                        Text("Jenis Kelamin",textAlign: TextAlign.end, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children:[
-                        Text(" ",textAlign: TextAlign.center, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                  ],
-                ),Row(
-                  children: <Widget>[
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children:[
-                        Text("Warga Negara",textAlign: TextAlign.end, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children:[
-                        Text(" ",textAlign: TextAlign.center, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: <Widget>[
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children:[
-                        Text("Golongan Darah",textAlign: TextAlign.end, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children:[
-                        Text(" ",textAlign: TextAlign.center, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: <Widget>[
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children:[
-                        Text("Status Pernikahan",textAlign: TextAlign.end, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children:[
-                        Text(" ",textAlign: TextAlign.center, style: TextStyle(fontSize: 18.0)),
-                        ]
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: <Widget>[
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children:<Widget>[
-                        MaterialButton(
-                        height: 50.0,
-                        color: Colors.blueAccent,
-                        textColor: Colors.white,
-                        padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-                        onPressed: () {
-                          
-                        },
-                        child: Text('KTM'),
-                        ),
-                      ]
-                      ),
-                    ),
-                    SizedBox(width:20),
-                    Flexible(
-                      child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children:[
-                        MaterialButton(
-                        height: 50.0,
-                        color: Colors.blueAccent,
-                        textColor: Colors.white,
-                        padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                              MaterialPageRoute(
-                                  builder: (context) => QrCode()
-                              )    
-                            );
-                          },
-                        child: Text('QR Code'),
-                        ),
-                      ]
-                      ),
-                    ),
-                  ],
-                ),
-                MaterialButton(
-                        height: 50.0,
-                        color: Colors.white,
-                        textColor: Colors.orangeAccent,
-                        minWidth: MediaQuery.of(context).size.width,
-                        padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                              MaterialPageRoute(
-                                  builder: (context) => LoginApp()
-                              )    
-                          );
-                        },
-                        child: Text('LOGOUT'),
-                        ),
-                BottomNavigationBar(
+                  SizedBox(width: 20),
+                  Flexible(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          MaterialButton(
+                            height: 50.0,
+                            color: Colors.blueAccent,
+                            textColor: Colors.white,
+                            padding:
+                                EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => QrCode()));
+                            },
+                            child: Text('QR Code'),
+                          ),
+                        ]),
+                  ),
+                ],
+              ),
+              MaterialButton(
+                height: 50.0,
+                color: Colors.white,
+                textColor: Colors.orangeAccent,
+                minWidth: MediaQuery.of(context).size.width,
+                padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LoginApp()));
+                },
+                child: Text('LOGOUT'),
+              ),
+              BottomNavigationBar(
                 type: BottomNavigationBarType.fixed,
                 backgroundColor: Colors.white,
                 selectedItemColor: Colors.black,
